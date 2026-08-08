@@ -299,30 +299,40 @@
     }
   }
 
-  // Apply saved content. Firestore (content/<CONTENT_DOC>) is ALWAYS the
-  // source of truth. We listen in real time so the page updates the moment
-  // the admin saves changes in the dashboard — no refresh needed. The
-  // localStorage cache is used only when Firebase is unavailable.
+  // Firestore (content/<CONTENT_DOC>) is ALWAYS the source of truth. We ignore
+  // the SDK's local cache snapshots and only render once the server delivers
+  // the latest data — so the page never flashes stale content. After that we
+  // keep listening so edits made in the dashboard appear live. The page stays
+  // behind the preloader until "zandf:content-ready" is dispatched.
   document.addEventListener('DOMContentLoaded', () => {
     const local = readLocalContent();
     const fb = window.ZANDF_FIREBASE;
+    const signalReady = () => {
+      document.dispatchEvent(new CustomEvent('zandf:content-ready'));
+    };
 
     if (fb && fb.db) {
       fb.db.collection('content').doc(CONTENT_DOC).onSnapshot(
+        { includeMetadataChanges: true },
         (snap) => {
+          // Ignore cached/offline snapshots — only render server data.
+          if (snap.metadata.fromCache) return;
           if (snap.exists) {
             applyContent(migrate(snap.data()));
           } else if (local) {
             applyContent(local);
           }
+          signalReady();
         },
         (err) => {
           console.error('ZANDF: could not load content from Firestore:', err);
           if (local) applyContent(local);
+          signalReady();
         }
       );
-    } else if (local) {
-      applyContent(local);
+    } else {
+      if (local) applyContent(local);
+      signalReady();
     }
   });
 })();
