@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | ZANDF</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Outfit:wght@400..900&family=JetBrains+Mono:wght@400..700&display=swap">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="login-body">
+
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+
+  <main class="login-wrap">
+    <div class="login-card">
+      <div class="login-brand">
+        <span class="login-logo-text">ZAND<span>F</span></span>
+        <p>Admin Console</p>
+      </div>
+
+      <h1>Sign in</h1>
+      <p class="login-sub">Restricted area. Authorized personnel only.</p>
+
+      <form id="loginForm" class="login-form" novalidate>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="admin@zandf.com" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-field">
+            <input type="password" id="password" name="password" placeholder="••••••••"
+              autocomplete="current-password" required>
+            <button type="button" class="toggle-pw" id="togglePw" aria-label="Show password">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary login-submit" id="loginSubmit">
+          <span>Sign In</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="login-status" id="loginStatus" role="alert" aria-live="polite"></p>
+      </form>
+
+      <a href="index.html" class="login-back">
+        <i class="fa-solid fa-arrow-left"></i> Back to website
+      </a>
+    </div>
+
+    <p class="login-footnote">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      Secure admin login via Firebase Auth. Email and password are verified by
+      Firebase — never by client-side code.
+    </p>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics-compat.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

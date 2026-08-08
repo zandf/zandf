@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | ZANDF</title>
+  <meta name="description" content="ZANDF Privacy Policy — how we collect, use, and protect your information.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Outfit:wght@400..900&family=JetBrains+Mono:wght@400..700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader" role="status" aria-label="Loading ZANDF">
+    <div class="preloader-inner">
+      <div class="preloader-circle">
+        <img src="images/logo.webp" alt="ZANDF Logo" class="preloader-logo" width="512" height="512">
+        <div class="preloader-spinner" aria-hidden="true"></div>
+      </div>
+      <div class="preloader-brand">ZAND<span>F</span></div>
+      <p class="preloader-tag">Loading experience…</p>
+    </div>
+  </div>
+  <noscript>
+    <style>.preloader { display: none; }</style>
+  </noscript>
+
+  <!-- Ambient Background -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.webp" alt="ZANDF Logo" width="512" height="512">
+        <span class="nav-logo-text">ZAND<span>F</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-sidebar-brand" id="navSidebarBrand" aria-label="ZANDF home">
+          <span class="nav-logo-text">ZAND<span>F</span></span>
+        </a>
+        <a href="index.html#services">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+          </svg>
+          Services
+        </a>
+        <a href="index.html#about">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          About
+        </a>
+        <a href="index.html#portfolio">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Portfolio
+        </a>
+        <a href="index.html#testimonials">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          Reviews
+        </a>
+        <a href="index.html#contact" class="nav-cta">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+          Get in Touch
+        </a>
+      </div>
+      <div class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== POLICY PAGE ===== -->
+  <section class="policy" id="policy">
+    <div class="container">
+      <div class="policy-hero">
+        <span class="section-label">Legal</span>
+        <h1 class="section-title" id="policyTitle">Privacy Policy</h1>
+        <p class="policy-updated" id="policyUpdated"></p>
+        <p class="section-subtitle" id="policyIntro"></p>
+      </div>
+
+      <div class="policy-sections" id="policySections"></div>
+
+      <div class="policy-back">
+        <a href="index.html" class="btn-secondary">
+          Back to Home
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="images/logo.webp" alt="ZANDF Logo" width="512" height="512" style="height:38px">
+            <span class="nav-logo-text">ZAND<span>F</span></span>
+          </a>
+          <p>Premium web solutions and development services that transform your digital presence and accelerate business
+            growth.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1cDTvYUpmY/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/zandf.1?utm_source=qr" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <a href="index.html#services">Web Store</a>
+          <a href="index.html#services">Landing Page</a>
+          <a href="index.html#services">Web System</a>
+          <a href="index.html#services">Menu</a>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#about">About Us</a>
+          <a href="index.html#portfolio">Portfolio</a>
+          <a href="index.html#testimonials">Reviews</a>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <a href="mailto:zandf211@gmail.com">zandf211@gmail.com</a>
+          <a href="tel:01223285381">01223285381</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ZANDF Web Solutions & Development. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="policy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics-compat.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/policy.js"></script>
+  <script src="js/site.js"></script>
+</body>
+
+</html>

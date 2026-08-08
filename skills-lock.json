@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "VibeSec-Skill": {
+      "source": "behisecc/vibesec-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "1ecc71d212ca31e9cec683649adeff193ad1326f3d4eca24f618cb1a1c8457ee"
+    }
+  }
+}
