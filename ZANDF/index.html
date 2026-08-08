@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZANDF | Technology Solutions & Development — Premium Digital Experiences</title>
+  <meta name="description"
+    content="ZANDF Web Solutions & Development crafts premium websites, web applications, and digital experiences that drive growth and elevate your brand.">
+  <meta name="keywords"
+    content="web development, web design, ZANDF, web solutions, custom software, UI/UX, digital agency">
+  <meta name="author" content="ZANDF Web Solutions & Development">
+  <meta property="og:title" content="ZANDF | Web Solutions & Development">
+  <meta property="og:description"
+    content="Premium web solutions and development services that transform your digital presence.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Outfit:wght@400..900&family=JetBrains+Mono:wght@400..700&display=swap">
+  <link rel="preload" href="images/hero-bg.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader" role="status" aria-label="Loading ZANDF">
+    <div class="preloader-inner">
+      <div class="preloader-circle">
+        <img src="images/logo.webp" alt="ZANDF Logo" class="preloader-logo" width="512" height="512">
+        <div class="preloader-spinner" aria-hidden="true"></div>
+      </div>
+      <div class="preloader-brand">ZAND<span>F</span></div>
+      <p class="preloader-tag">Loading experience…</p>
+    </div>
+  </div>
+  <noscript>
+    <style>.preloader { display: none; }</style>
+  </noscript>
+
+  <!-- Ambient Background -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.webp" alt="ZANDF Logo" width="512" height="512">
+        <span class="nav-logo-text">ZAND<span>F</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#" class="nav-sidebar-brand" id="navSidebarBrand" aria-label="ZANDF home">
+          <span class="nav-logo-text">ZAND<span>F</span></span>
+        </a>
+        <a href="#services">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+          </svg>
+          Services
+        </a>
+        <a href="#about">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          About
+        </a>
+        <a href="#portfolio">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Portfolio
+        </a>
+        <a href="#testimonials">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          Reviews
+        </a>
+        <a href="#contact" class="nav-cta">
+          <svg class="nav-link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+          Get in Touch
+        </a>
+      </div>
+      <div class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bg.webp" alt="" aria-hidden="true" width="1376" height="768">
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Available for New Projects
+        </div>
+        <h1>
+          We Build<br>
+          <span class="gradient-text" id="hero-gradient-text">Digital Experiences</span><br>
+          That Matter
+        </h1>
+        <p class="hero-description" id="hero-description">
+          ZANDF delivers premium web solutions — from stunning websites to powerful applications — engineered with
+          precision, designed with passion.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary" id="hero-cta-start">
+            Start Your Project
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#portfolio" class="btn-secondary" id="hero-cta-work">
+            View Our Work
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17l9.2-9.2M17 17V7H7" />
+            </svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <h3 id="stat-projects">150+</h3>
+            <p>Projects Delivered</p>
+          </div>
+          <div class="hero-stat">
+            <h3 id="stat-clients">80+</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="hero-stat">
+            <h3 id="stat-years">8+</h3>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo-container">
+          <div class="hero-logo-ring"></div>
+          <div class="hero-logo-ring"></div>
+          <div class="hero-logo-img">
+            <img src="images/logo.webp" alt="ZANDF Web Solutions Logo" width="512" height="512" fetchpriority="high" decoding="async">
+          </div>
+          <div class="floating-code">&lt;/&gt; Clean Code</div>
+          <div class="floating-code">{ } API Ready</div>
+          <div class="floating-code">⚡ Blazing Fast</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Comprehensive <span class="gradient-text">Web Solutions</span></h2>
+        <p class="section-subtitle">From concept to deployment, we deliver end-to-end digital solutions tailored to your
+          business needs.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal reveal-delay-1" id="service-web-store">
+          <span class="service-number">01</span>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+              <path d="M16 11V6a4 4 0 0 0-8 0v5" />
+            </svg>
+          </div>
+          <h3>Web Store</h3>
+          <p>Full-featured online shops with secure checkout, product catalogs, and inventory tools — built to convert
+            visitors into loyal customers.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card reveal reveal-delay-2" id="service-landing-page">
+          <span class="service-number">02</span>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg>
+          </div>
+          <h3>Landing Page</h3>
+          <p>High-impact single-page experiences designed to capture attention, communicate your value, and drive
+            sign-ups, sales, or leads.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card reveal reveal-delay-3" id="service-web-system">
+          <span class="service-number">03</span>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+              <path d="M7 8h2M7 12h6" />
+            </svg>
+          </div>
+          <h3>Web System</h3>
+          <p>Custom dashboards, admin panels, and business platforms that streamline operations and scale with your
+            workflow.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-card reveal reveal-delay-1" id="service-menu">
+          <span class="service-number">04</span>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              <line x1="8" y1="7" x2="16" y2="7" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+              <line x1="8" y1="15" x2="12" y2="15" />
+            </svg>
+          </div>
+          <h3>Menu</h3>
+          <p>Beautiful digital menus for restaurants and cafés — easy to browse, mobile-friendly, and ready for
+            WhatsApp or online ordering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image reveal">
+        <img src="images/about-visual.webp" alt="ZANDF team at work — building modern web solutions"
+          width="1264" height="848" loading="lazy" decoding="async">
+        <div class="about-stats-float">
+          <div class="about-stat-pill">
+            <h4>99%</h4>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="about-stat-pill">
+            <h4>24/7</h4>
+            <p>Support Available</p>
+          </div>
+          <div class="about-stat-pill">
+            <h4>5★</h4>
+            <p>Average Rating</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-label reveal">Who We Are</span>
+        <h2 class="section-title reveal">Crafting Digital           <span class="gradient-text" id="about-gradient-text">Excellence</span></h2>
+        <p class="section-subtitle reveal" id="about-subtitle">
+          ZANDF is a forward-thinking web solutions agency dedicated to transforming ideas into powerful digital
+          realities. We combine creativity, engineering rigor, and deep industry insight.
+        </p>
+        <div class="about-features">
+          <div class="about-feature reveal reveal-delay-1">
+            <div class="about-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <div>
+              <h4>Lightning-Fast Performance</h4>
+              <p>Optimized codebases with sub-second load times and smooth 60fps interactions.</p>
+            </div>
+          </div>
+          <div class="about-feature reveal reveal-delay-2">
+            <div class="about-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Modern Tech Stack</h4>
+              <p>We leverage the latest frameworks and tools to future-proof your investment.</p>
+            </div>
+          </div>
+          <div class="about-feature reveal reveal-delay-3">
+            <div class="about-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div>
+              <h4>Dedicated Team</h4>
+              <p>A committed team of designers, developers, and strategists fully focused on your success.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary reveal reveal-delay-4" id="about-cta">
+          Work With Us
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="portfolio-header reveal">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of our recent work showcasing our expertise across diverse industries.
+        </p>
+      </div>
+      <div class="portfolio-grid">
+        <a href="https://alban-amer-nu.vercel.app" target="_blank" rel="noopener noreferrer">
+          <div class="portfolio-card reveal reveal-delay-1" id="alban-amer">
+            <img src="images/alban-amer.webp" alt="alban-amer e-commerce platform by ZANDF" width="900" height="506" loading="lazy"
+              decoding="async">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Web Store</span>
+              <h3>alban-amer</h3>
+              <p>A premium online marketplace </p>
+            </div>
+          </div>
+        </a>
+        <a href="https://casablanca-850e5.web.app/index.html" target="_blank" rel="noopener noreferrer">
+          <div class="portfolio-card reveal reveal-delay-2" id="casablanca-menu">
+            <img src="images/casablanca.webp" alt="Casablanca restaurant menu website by ZANDF" width="900" height="506" loading="lazy"
+              decoding="async">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Menu</span>
+              <h3>Casablanca Menu</h3>
+              <p>A premium digital menu for Minya's favorite pizza & grill — browse dishes, order online, and explore
+                offers in Arabic and English.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH STACK SECTION ===== -->
+  <section class="tech-stack" id="tech-stack">
+    <div class="container">
+      <div class="tech-stack-header reveal">
+        <span class="section-label">Our Arsenal</span>
+        <h2 class="section-title">Technologies <span class="gradient-text">We Master</span></h2>
+        <p class="section-subtitle">Battle-tested tools and frameworks that power enterprise-grade solutions.</p>
+      </div>
+    </div>
+    <div class="tech-marquee-wrapper">
+      <div class="tech-marquee" id="techMarquee">
+        <!-- Row 1 - will be duplicated by JS -->
+        <div class="tech-item">
+          <div class="tech-item-icon"><img src="icons/react.svg" alt="React"></div>
+          <div><span class="tech-item-name">React</span><br><span class="tech-item-category">Frontend</span></div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon"><img src="icons/html.svg" alt="html"></div>
+          <div><span class="tech-item-name">HTML</span><br><span class="tech-item-category">Frontend</span></div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon"><img src="icons/css.svg" alt="css"></div>
+          <div><span class="tech-item-name">CSS</span><br><span class="tech-item-category">Frontend</span></div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon"><img src="icons/javascript.svg" alt="javascript"></div>
+          <div><span class="tech-item-name">JavaScript</span><br><span class="tech-item-category">Frontend</span></div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon"><img src="icons/vercel.svg" alt="vercel"></div>
+          <div><span class="tech-item-name">Vercel</span><br><span class="tech-item-category">Platform</span></div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon"><img src="icons/tailwindcss.svg" alt="tailwindcss"></div>
+          <div><span class="tech-item-name">Tailwind</span><br><span class="tech-item-category">Frontend</span></div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon"><img src="icons/firebase.svg" alt="Firebase"></div>
+          <div><span class="tech-item-name">Firebase</span><br><span class="tech-item-category">Platform</span></div>
+        </div>
+        <!-- Duplicates for seamless scroll -->
+        <div class="tech-item">
+          <div class="tech-item-icon"><img src="icons/react.svg" alt="Firebase"></div>
+          <div><span class="tech-item-name">React</span><br><span class="tech-item-category">Frontend</span></div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon"><img src="icons/firebase.svg" alt="Firebase"></div>
+          <div><span class="tech-item-name">Firebase</span><br><span class="tech-item-category">Platform</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <span class="section-label">Client Stories</span>
+        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+        <p class="section-subtitle">Real feedback from businesses we've helped transform their digital presence.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal reveal-delay-1" id="testimonial-1">
+          <div class="testimonial-stars">&#9733;&#65038;&#9733;&#65038;&#9733;&#65038;&#9733;&#65038;&#9733;&#65038;</div>
+          <p class="testimonial-text">"ZANDF transformed our outdated website into a modern, high-converting platform.
+            Sales increased by 180% within the first quarter after launch."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div class="testimonial-info">
+              <h4>Ahmed Khalil</h4>
+              <p>CEO, TechVentures Inc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2" id="testimonial-2">
+          <div class="testimonial-stars">&#9733;&#65038;&#9733;&#65038;&#9733;&#65038;&#9733;&#65038;&#9733;&#65038;</div>
+          <p class="testimonial-text">"Their team delivered our complex dashboard application on time and under budget.
+            The attention to detail and code quality was exceptional."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SH</div>
+            <div class="testimonial-info">
+              <h4>Sara Hassan</h4>
+              <p>CTO, DataStream Analytics</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-3" id="testimonial-3">
+          <div class="testimonial-stars">&#9733;&#65038;&#9733;&#65038;&#9733;&#65038;&#9733;&#65038;&#9733;&#65038;</div>
+          <p class="testimonial-text">"Working with ZANDF was a game-changer for our startup. They understood our vision
+            and built a product that exceeded every expectation."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div class="testimonial-info">
+              <h4>Mohamed Rami</h4>
+              <p>Founder, FinFlow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-container reveal">
+        <span class="cta-deco">const project = await zandf.create();</span>
+        <span class="cta-deco">// Let's build something great</span>
+        <span class="section-label" style="justify-content: center;">Ready to Start?</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Extraordinary</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's talk about how ZANDF can bring your vision to life
+          with cutting-edge web solutions.</p>
+
+        <!-- Contact Form (EmailJS) -->
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="from_name">Full Name</label>
+              <input type="text" id="from_name" name="from_name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="from_email">Email Address</label>
+              <input type="email" id="from_email" name="from_email" placeholder="john@company.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+20 122 328 5381">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Web Store">Web Store</option>
+                <option value="Landing Page">Landing Page</option>
+                <option value="Web System">Web System</option>
+                <option value="Menu">Menu</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Tell us about your project — goals, timeline, budget..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary form-submit-btn" id="contact-submit">
+            <span class="btn-text">Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="cta-alt-contact">
+          <a href="mailto:zandf211@gmail.com" id="cta-email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            zandf211@gmail.com
+          </a>
+          <span class="cta-alt-divider">•</span>
+          <a href="tel:01223285381" id="cta-phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            01223285381
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <img src="images/logo.webp" alt="ZANDF Logo" width="512" height="512" style="height:38px">
+            <span class="nav-logo-text">ZAND<span>F</span></span>
+          </a>
+          <p>Premium web solutions and development services that transform your digital presence and accelerate business
+            growth.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1cDTvYUpmY/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/zandf.1?utm_source=qr" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <a href="#services">Web Store</a>
+          <a href="#services">Landing Page</a>
+          <a href="#services">Web System</a>
+          <a href="#services">Menu</a>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="#services">Services</a>
+          <a href="#about">About Us</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#testimonials">Reviews</a>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <a href="mailto:zandf211@gmail.com">zandf211@gmail.com</a>
+          <a href="tel:01223285381">01223285381</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ZANDF Web Solutions & Development. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="policy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics-compat.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/content-loader.js"></script>
+  <script src="js/site.js"></script>
+</body>
+
+</html>
