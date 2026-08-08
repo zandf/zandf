@@ -94,19 +94,24 @@
     }
   }
 
+  // Firestore (content/<POLICY_DOC>) is ALWAYS the source of truth. Listen in
+  // real time so the page updates the moment the admin saves changes — no
+  // refresh needed. The localStorage cache is used only when Firebase is
+  // unavailable.
   document.addEventListener('DOMContentLoaded', () => {
     const local = readLocal();
     const fb = window.ZANDF_FIREBASE;
 
     if (fb && fb.db) {
-      fb.db.collection('content').doc(POLICY_DOC).get()
-        .then((snap) => {
+      fb.db.collection('content').doc(POLICY_DOC).onSnapshot(
+        (snap) => {
           applyPolicy(snap.exists ? snap.data() : (local || DEFAULT_POLICY));
-        })
-        .catch((err) => {
+        },
+        (err) => {
           console.error('ZANDF: could not load policy from Firestore:', err);
           applyPolicy(local || DEFAULT_POLICY);
-        });
+        }
+      );
     } else {
       applyPolicy(local || DEFAULT_POLICY);
     }
