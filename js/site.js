@@ -4,15 +4,17 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ——— Preloader: hide once the page (images, fonts) is fully loaded ———
+  // ——— Preloader: stays up until the latest content has been fetched from
+  // ——— Firebase (content-loader.js / policy.js dispatch "zandf:content-ready"),
+  // ——— so visitors never see stale/default data. Safety timeout as fallback.
   const preloader = document.getElementById('preloader');
   const hidePreloader = () => {
     if (!preloader || preloader.classList.contains('hidden')) return;
     preloader.classList.add('hidden');
     setTimeout(() => preloader.remove(), 600);
   };
-  window.addEventListener('load', hidePreloader);
-  setTimeout(hidePreloader, 5000); // safety fallback so it never gets stuck
+  document.addEventListener('zandf:content-ready', hidePreloader);
+  setTimeout(hidePreloader, 10000); // safety fallback so it never gets stuck
 
   // ——— rAF throttle: coalesce high-frequency events into one per frame ———
   const rafThrottle = (fn) => {
